@@ -235,7 +235,7 @@ right: 20px;}
 
 
     /* 메뉴를 토글을 클릭했을 때만 보이게 하는 설정 */
-.gnb {display: block;}
+.gnb {display: block !important;}
 
 
     
