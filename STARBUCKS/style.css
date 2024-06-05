@@ -1,0 +1,10 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* 전체설정 */
+*{margin: 0;
+padding: 0;}
+a{text-decoration: none;
+color: black;}
+ul,ol {list-style: none;}
+img{vertical-align: bottom;}
