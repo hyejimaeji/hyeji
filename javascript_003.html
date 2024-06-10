@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트학습 003</title>
+</head>
+<body>
+    <h2>자바스크립트 자료형</h2>
+    <p>컴퓨터가 수행할 수 있는 내용을 정리한 출력형태</p>
+    <ul>
+        <li>숫자 : 숫자단독으로사용
+        </li>
+        <li>문자(글자)"큰따옴표",'작은따옴표'모두 사용가능, 중첩시 교차설정 가능</li>
+        <li>참/거짓 : 논리형 true, false으로 출력</li>
+        <li>배열 : 하나의 변수에 여러개의 문자를 첨부하는 형</li>
+        <li>객체 : 컴퓨터가 인식하고 있는 함수의 구조를 불러오는 형 <br>
+        대표적으로 날짜 , 시간, 자연수, 소수 이런 내용을 설정</li>
+        <li>특수형 : null(숫자를 인식못하는 경우), none(문자를 인식 못하는 경우), undefined(자료를 인식 못하는 경우)</li>
+    </ul>
+
+    <h2>연산자 공부하기</h2>
+<ul>
+    <li>산술연산자
+        <ul>
+            <li>+ : 숫자의 경우 더한다, 문자의 경우 결합한다.</li>
+            <li>- : 숫자의 경우만 있고 수를 뺀다.</li>
+            <li>* : 숫자의 경우만 있고 곱한다.</li>
+            <li>/ : 숫자의 경우만 있고 나눈다.</li>
+            <li>% : 숫자의 경우만 있고 나눈 다음 나머지를 뜻한다. </li>
+        </ul>
+    </li>
+    <li>증감연산자 
+        <ul>
+            <li>++ : 1씩 더해나간다</li>
+            <li>-- : 1씩 빼나간다</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </li>
+</ul>
+    <span id="left">왼쪽</span> <span id="right">오른쪽</span><br>
+    <em>예제는 콘솔창에서 확인가능</em>
+
+    <script>
+        var num1 = 5;
+        var num2 = 10;
+        var result4;
+        
+        var result = num1 + num2;
+        console.log(result)
+        var txt1 = "5";
+        var txt2 = "십";
+        var result2 = txt1 + txt2;
+        console.log(result2)
+        var result3 = num1 == num2;
+        console.log(result3)
+
+        var day = ['일', '월','화', '수', '목', '금', '토']
+        console.log(day)
+        console.log(day[0])
+        console.log(day[1])
+        var today = new Date()  // 현재 시간정보를 가져온다.
+        console.log(today)
+        var days = today.getDay()
+        console.log(days)
+        console.log(day[days] + '요일')  
+        var num3 = ['짝수', '홀수']
+
+        result4 = num2 - num1;
+        result4 = num1 * num2;
+        result4 = num2 / num1;
+        result4 = num2%num1
+        result4 = num1%2
+        num1++;
+        num1++;
+        result4 = num1;
+
+
+        console.log(result4)
+        console.log(num3[result4])
+
+        var left = document.querySelector('#left')
+        var right = document.querySelector('#right')
+
+        var i = 0;
+        // left를 클릭할 때마다 변수 i의 숫자가 줄어들어라.
+        left.onclick = function(){
+i--;
+console.log(i)
+        }
+        // right를 클릭할 때마다 변수 i의 숫자가 늘어나라.
+        right.onclick = function(){
+i ++;
+console.log(i)
+
+        }
+
+</script>
+    
+</body>
+</html>
